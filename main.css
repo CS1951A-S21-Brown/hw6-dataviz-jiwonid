@@ -9,4 +9,21 @@
     text-align: center;
 }
 
+#writing{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+div.tooltip {
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 45px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: rgba(0,0,0,.8);
+  border: 2px solid black;
+  pointer-events: none;
+}
 /* Include any custom CSS styling here! */

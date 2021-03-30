@@ -7,12 +7,15 @@
         <link rel="stylesheet" href="main.css"/>
         <!--Feel free to add more CSS files as needed-->
         <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
     </head>
 <body>
     <div class="header">
         <h3>Assignment 6 &laquo; Data Visualization Dashboard &raquo;</h3>
     </div>
     <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
+    <div id="graphs">
     <div class="row">
         <div class="col-lg-6">
             <div id="graph1"></div>
@@ -21,6 +24,39 @@
         <div class="col-lg-6">
             <div id="graph3"></div>
         </div>
+    </div>
+    </div>
+    <div id="writing">
+        <p>
+        <b>Question 1:</b> <br/>
+        My dashboard answers the first question by showing a horizontal bar chart that tells the top 10 most sold games by year, including all years up to 2016. If a game appeared on multiple consoles in a certain year, then the sales for each console are summed together. The user could interact with this data by selecting a year of interest in the dropdown, or selecting All Years to see the top 10 of all time.<br/>
+        My dashboard answers the second question by showing a map that tells the most popular genre of game upon hovering over a region. The tooltip shows the name of the region, the most popular genre for that region, and number of copies sold in millions.<br/>
+        My dashboard answers the third question by showing a donut chart that tells the top 10 leading publishers by genre. All the remaining publishers are categorized under “Other.” The user could interact with this data by selecting a genre of interest in the dropdown. The leading publisher for that genre is easily identifiable as the largest portion on the donut graph.<br/>
+        </p>
+
+        <p>
+        <b>Question 2:</b> <br/>
+        a. D3 is capable of displaying a wide range of different types of data visualizations, in addition to there being a variety of templates to be used.<br/>
+        b. D3 works well with other web technologies and can manipulate any part of the DOM.<br/>
+        c. D3 allows users to be able to easily interact with the data using transitions and transformations.<br/>
+        </p>
+
+        <p>
+        <b>Question 3:</b> <br/>
+        a. In D3, a single line of code can span across many lines of text, so readability of D3 is questionable.<br/>
+        b. The order in which to append elements and mention attributes of a given D3 element can be difficult to ascertain.<br/>
+        c. A D3 graph that is displayed well on my local device or on my browser could show very poorly on another device or another browser because display of DOM elements is browser dependent.<br/>
+        </p>
+
+        <p>
+        <b>Question 4:</b> <br/>
+        I believe my dashboard is decently accessible. Because I knew I will be dealing with several pie sectors, instead of using a standard pie chart with a separate key map that relies on color, I used a donut chart and labeled data points on the donut sectors directly. I also separated elements with whitespace on the donut chart, so that viewers can more easily distinguish between data. Further, I stayed away from using sliders for users to manipulate the various graphs, as suggested by the betterment article. Instead, I used dropdown filters. Lastly, I stayed away from hover overlays as much as possible (with the exception of the map) so that  viewers can more quickly process information. I believe any users who have had experience interacting with any WebApp element would be able to comfortably access this dashboard. Users who are extremely nearsighted might have a hard time reading some of the labels in my dashboard. For this reason, as part of the additional actions, I might make some of my labels larger to make this dashboard more accessible to all audiences without sacrificing the content of the graph.
+        </p>
+
+        <p>
+        <b>Question 5:</b> <br/>
+        I could have dealt with the clustering of text in the donut graph. However, the factor that kept me way from taking this step was that it would’ve required writing a significant amount of code that would make a label show up somewhere other than automatically being positioned based on the portion of the donut graph the label is associated with. I could have also dealt with the small label sizes. However, the factor that kept me away from this was that I didn’t want to sacrifice the amount of data shown to more accurately convey the results.
+        </p>
     </div>
     <!--Feel free to add more JavaScript files as needed-->
     <script type="text/javascript" src="main.js"></script>
