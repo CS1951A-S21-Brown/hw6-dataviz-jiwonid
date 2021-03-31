@@ -469,7 +469,7 @@ var colorScale = d3.scaleThreshold()
 
 // Define the div for the tooltip
 const div = d3
-  .select('graphs')
+  .select('#graphs')
   .append('div')
   .attr('class', 'tooltip')
   .style('opacity', 0);
